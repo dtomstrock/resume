@@ -8,7 +8,6 @@
             h1 {
                 text-align: center;   
                 color: darkslateblue;
-                border-bottom: 2px darkslateblue;
             }
             h2 {
                 text-align: left;
@@ -16,31 +15,32 @@
             }
             .left-div {
                 text-align: left;
+                float: left;
             }
             .right-div {
                 text-align: right;
+                float: right;
             }
-            .box {
-                display: inline-block;
+            .clear-float {
+                clear: left;
             }
         </style>
     </head>
     <body>
         <h1>David Tomov-Strock</h1>
-        <!--Show address on left and email & phone on right-->
         <div>
-            <div class="box" text-align="left">
+            <div class="left-div">
                 <p>100 Stockton Street, Box 204<br>
                     Chelsea, MA 02150
                 </p>
             </div>
-            <div class="box">
-                <p text-align="right"><a href="mailto:david.wb.strock@gmail.com">david.wb.strock@gmail.com</a><br>
+            <div class="right-div">
+                <p><a href="mailto:david.wb.strock@gmail.com">david.wb.strock@gmail.com</a><br>
                     617-943-6700
                 </p>
             </div>
         </div>
-        <div>
+        <div class="clear-float">
             <h2>Education</h2>
             <h3>Boston University</h3>
             <ul>
